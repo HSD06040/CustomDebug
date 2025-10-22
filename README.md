@@ -2,6 +2,20 @@
   <img src="https://capsule-render.vercel.app/api?type=wave&color=timeGradient&height=250&section=header&text=Custom%20Debug&fontSize=70" />
 </div>
 
+<br>
+<br>
+<br>
+
+<div align="center">
+   <a href="https://github.com/HSD06040/CustomDebug/blob/main/README-en.md">
+    <img src="https://img.shields.io/badge/English-FF3E00?style=for-the-badge" />&nbsp
+  </a>
+</div>
+
+<br>
+<br>
+<br>
+
 디버깅 과정을 더욱 효율적이고 시각적으로 개선하기 위해 제작된 커스텀 디버그 시스템입니다. 로그 추적과 관리를 한층 더 업그레이드해보세요!
 
 ## 얻을 수 있는 이점
