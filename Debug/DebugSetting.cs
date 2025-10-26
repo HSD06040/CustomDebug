@@ -7,5 +7,17 @@ public class DebugSetting : ScriptableObject
 {
     public bool isFileSave = false;
     public string fileName = string.Empty;
-    public Color normalColor, warningColor, errorColor;    
+    [SerializeField] private Color logColor, warningColor, errorColor, exceptionColor;
+
+    public Color GetLogColor(LogType logType)
+    {
+        return logType switch
+        {
+            LogType.Log => logColor,
+            LogType.Warning => warningColor,
+            LogType.Error => errorColor,
+            LogType.Exception => exceptionColor,
+            _ => Color.white,
+        };
+    }
 }

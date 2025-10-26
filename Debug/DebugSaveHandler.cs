@@ -19,7 +19,7 @@ public class DebugSaveHandler
         sb = new StringBuilder();
     }
 
-    public void Apeend(string message)
+    public void Append(string message)
     {
         string timestampedMessage = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss.fff}] {message}";
         sb.AppendLine(timestampedMessage);
@@ -44,11 +44,11 @@ public class DebugSaveHandler
 
             sb.Clear();
 
-            Debug.Log($"로그 저장 완료: {fullPath}");
+            Debug.Log($"Log Save Complete: {fullPath}");
         }
         catch (Exception e)
         {
-            Debug.LogError($"로그 파일 저장 중 오류 발생: {e.Message}");
+            Debug.LogError($"Log Save Error: {e.Message}");
         }
 
 #if UNITY_EDITOR
